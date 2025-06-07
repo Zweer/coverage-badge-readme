@@ -2,13 +2,15 @@
   "name": "@zweer/coverage-badge-readme",
   "version": "0.0.0",
   "description": "A small utility to add your coverage badge to the README file",
-  "main": "index.js",
-  "scripts": {
-    "test": "vitest run"
-  },
+  "author": "Zweer <n.olivieriachille@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/Zweer/coverage-badge-readme#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Zweer/coverage-badge-readme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zweer/coverage-badge-readme/issues"
   },
   "keywords": [
     "utility",
@@ -16,10 +18,27 @@
     "badge",
     "coverage"
   ],
-  "author": "Zweer <n.olivieriachille@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Zweer/coverage-badge-readme/issues"
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "prepare": "husky"
   },
-  "homepage": "https://github.com/Zweer/coverage-badge-readme#readme"
+  "dependencies": {
+    "commander": "^14.0.0",
+    "dree": "^5.1.5",
+    "ignore": "^7.0.5"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.14.1",
+    "@tsconfig/node20": "^20.1.5",
+    "@types/node": "^22.15.30",
+    "@vitest/coverage-v8": "^3.2.2",
+    "esbuild-register": "^3.6.0",
+    "husky": "^9.1.7",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
+  }
 }
