@@ -1,0 +1,25 @@
+{
+  "name": "@zweer/coverage-badge-readme",
+  "version": "0.0.0",
+  "description": "A small utility to add your coverage badge to the README file",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zweer/coverage-badge-readme.git"
+  },
+  "keywords": [
+    "utility",
+    "readme",
+    "badge",
+    "coverage"
+  ],
+  "author": "Zweer <n.olivieriachille@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zweer/coverage-badge-readme/issues"
+  },
+  "homepage": "https://github.com/Zweer/coverage-badge-readme#readme"
+}
