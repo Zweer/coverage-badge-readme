@@ -1,27 +1,8 @@
+import type { Coverage } from './types.js';
+
 import { existsSync, readFileSync } from 'node:fs';
 
-interface CoverageDetail {
-  covered: number;
-  pct: number;
-  skipped: number;
-  total: number;
-}
-
-export enum CoverageMetric {
-  BRANCHES = 'branches',
-  BRANCHES_TRUE = 'branchesTrue',
-  FUNCTIONS = 'functions',
-  LINES = 'lines',
-  STATEMENTS = 'statements',
-}
-
-type FileCoverage = Record<CoverageMetric, CoverageDetail>;
-
-type Coverage = {
-  total: FileCoverage;
-} & {
-  [file: string]: FileCoverage;
-};
+import { CoverageMetric } from './types.js';
 
 export function extractCoverage(filePath: string, coverageMetric: CoverageMetric): number {
   if (!Object.values(CoverageMetric).includes(coverageMetric)) {

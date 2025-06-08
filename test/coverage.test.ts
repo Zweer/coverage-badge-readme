@@ -5,7 +5,8 @@ import * as fs from 'node:fs';
 import { vol } from 'memfs';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { CoverageMetric, extractCoverage } from '../src/coverage.js';
+import { extractCoverage } from '../src/coverage.js';
+import { CoverageMetric } from '../src/types.js';
 
 vi.mock('node:fs', async () => {
   const { fs } = await import('memfs');
