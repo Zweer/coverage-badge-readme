@@ -5,7 +5,7 @@ import * as fs from 'node:fs';
 import { vol } from 'memfs';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { modifyReadme } from '../src/readme.js';
+import { modifyReadme } from '../lib/readme.js';
 
 vi.mock('node:fs', async () => {
   const { fs } = await import('memfs');
