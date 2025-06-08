@@ -44,7 +44,7 @@ describe('badge', () => {
 
       expect(consoleLogSpy).not.toHaveBeenCalled();
       expect(consoleWarnSpy).not.toHaveBeenCalled();
-      expect(consoleErrorSpy).not.toHaveBeenCalledWith();
+      expect(consoleErrorSpy).not.toHaveBeenCalled();
     });
 
     it('should use a custom badge', () => {
@@ -52,7 +52,7 @@ describe('badge', () => {
 
       expect(consoleLogSpy).not.toHaveBeenCalled();
       expect(consoleWarnSpy).not.toHaveBeenCalled();
-      expect(consoleErrorSpy).not.toHaveBeenCalledWith();
+      expect(consoleErrorSpy).not.toHaveBeenCalled();
     });
 
     const constantCoverageColors: CoverageColor[] = [{ color: 'red' }];
@@ -62,7 +62,7 @@ describe('badge', () => {
 
       expect(consoleLogSpy).not.toHaveBeenCalled();
       expect(consoleWarnSpy).not.toHaveBeenCalled();
-      expect(consoleErrorSpy).not.toHaveBeenCalledWith();
+      expect(consoleErrorSpy).not.toHaveBeenCalled();
     });
 
     it('should use a constant coverage color (custom template)', () => {
@@ -70,7 +70,7 @@ describe('badge', () => {
 
       expect(consoleLogSpy).not.toHaveBeenCalled();
       expect(consoleWarnSpy).not.toHaveBeenCalled();
-      expect(consoleErrorSpy).not.toHaveBeenCalledWith();
+      expect(consoleErrorSpy).not.toHaveBeenCalled();
     });
 
     const customCoverageColors: CoverageColor[] = [
@@ -87,7 +87,7 @@ describe('badge', () => {
 
       expect(consoleLogSpy).not.toHaveBeenCalled();
       expect(consoleWarnSpy).not.toHaveBeenCalled();
-      expect(consoleErrorSpy).not.toHaveBeenCalledWith();
+      expect(consoleErrorSpy).not.toHaveBeenCalled();
     });
 
     it('should use a custom coverage color (custom template)', () => {
@@ -95,7 +95,7 @@ describe('badge', () => {
 
       expect(consoleLogSpy).not.toHaveBeenCalled();
       expect(consoleWarnSpy).not.toHaveBeenCalled();
-      expect(consoleErrorSpy).not.toHaveBeenCalledWith();
+      expect(consoleErrorSpy).not.toHaveBeenCalled();
     });
   });
 
