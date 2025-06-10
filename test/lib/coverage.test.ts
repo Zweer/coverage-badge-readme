@@ -5,8 +5,8 @@ import * as fs from 'node:fs';
 import { vol } from 'memfs';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { extractCoverage } from '../lib/coverage.js';
-import { CoverageMetric } from '../lib/types.js';
+import { extractCoverage } from '../../lib/coverage.js';
+import { CoverageMetric } from '../../lib/types.js';
 
 vi.mock('node:fs', async () => {
   const { fs } = await import('memfs');
@@ -20,7 +20,7 @@ vi.mock('node:fs', async () => {
 const rootFolder = '/fake/root/folder';
 const coveragePath = `${rootFolder}/coverage/coverage.txt`;
 
-describe('coverage', () => {
+describe('lib -> coverage', () => {
   let consoleLogSpy: MockInstance<typeof console.log>;
   let consoleErrorSpy: MockInstance<typeof console.error>;
 

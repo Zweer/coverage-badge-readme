@@ -28,4 +28,13 @@ export default antfu({
       ],
     }],
   },
+}, {
+  rules: {
+    'ts/no-unsafe-argument': 'off',
+    'ts/no-unsafe-assignment': 'off',
+    'ts/no-unsafe-call': 'off',
+    'ts/no-unsafe-member-access': 'off',
+    'ts/no-unsafe-return': 'off',
+  },
+  files: ['cli/**/*', 'test/cli/**/*'],
 });

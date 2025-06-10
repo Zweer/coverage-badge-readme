@@ -1,13 +1,13 @@
 import type { MockInstance } from 'vitest';
 
-import type { CoverageColor } from '../lib/types.js';
+import type { CoverageColor } from '../../lib/types.js';
 
 import { it } from 'vitest';
 import { afterEach, beforeEach, describe, expect, vi } from 'vitest';
 
-import { createBadge } from '../lib/badge.js';
+import { createBadge } from '../../lib/badge.js';
 
-describe('badge', () => {
+describe('lib -> badge', () => {
   let consoleLogSpy: MockInstance<typeof console.log>;
   let consoleWarnSpy: MockInstance<typeof console.warn>;
   let consoleErrorSpy: MockInstance<typeof console.error>;

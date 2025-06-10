@@ -5,7 +5,7 @@ import * as fs from 'node:fs';
 import { vol } from 'memfs';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { modifyReadme } from '../lib/readme.js';
+import { modifyReadme } from '../../lib/readme.js';
 
 vi.mock('node:fs', async () => {
   const { fs } = await import('memfs');
@@ -19,7 +19,7 @@ vi.mock('node:fs', async () => {
 const rootFolder = '/fake/root/folder';
 const readmePath = `${rootFolder}/README.md`;
 
-describe('readme', () => {
+describe('lib -> readme', () => {
   let consoleLogSpy: MockInstance<typeof console.log>;
   let consoleWarnSpy: MockInstance<typeof console.warn>;
   let consoleErrorSpy: MockInstance<typeof console.error>;
