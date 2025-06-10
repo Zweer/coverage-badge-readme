@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/Zweer/coverage-badge-readme/compare/v1.0.1...v1.0.2) (2025-06-10)
+
+
+### Bug Fixes
+
+* :construction_worker: Fixed the husky run when publishing ([e2a7cf5](https://github.com/Zweer/coverage-badge-readme/commit/e2a7cf5d1cbc6c556364bed4acee0eaee2cfcaf8))
+* :construction_worker: Using a better way to skip husky ([6511839](https://github.com/Zweer/coverage-badge-readme/commit/6511839488ee0d75f372128b6997c06e38cf4236))
+
 ## [1.0.1](https://github.com/Zweer/coverage-badge-readme/compare/v1.0.0...v1.0.1) (2025-06-10)
 
 
