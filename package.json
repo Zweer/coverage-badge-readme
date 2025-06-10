@@ -41,7 +41,7 @@
     "test": "vitest run",
     "test:coverage": "npm test -- --coverage",
     "script:coverage": "npx tsx cli/index.ts",
-    "prepare": "[ -d '.git' ] && husky || echo 'skipping husky'",
+    "prepare": "[ \"$CI\" = \"true\" ] || [ \"$GITHUB_ACTIONS\" = \"true\" ] && echo 'Skipping husky' && exit 0 || husky",
     "clean": "rimraf --glob ./{cli,lib,test}/**/*.{d.ts,js} ./vitest*.{d.ts,js}",
     "prebuild": "npm run clean",
     "build": "tsc",
