@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Zweer/coverage-badge-readme/compare/v1.0.3...v1.0.4) (2025-06-10)
+
+
+### Bug Fixes
+
+* :construction_worker: Finally removing `.ts` files from npm package ([146387a](https://github.com/Zweer/coverage-badge-readme/commit/146387a9188ba595b48316787069a9bf1fc65d36))
+
 ## [1.0.3](https://github.com/Zweer/coverage-badge-readme/compare/v1.0.2...v1.0.3) (2025-06-10)
 
 

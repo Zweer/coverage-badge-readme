@@ -1,7 +1,7 @@
 {
   "name": "@zweer/coverage-badge-readme",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A small utility to add your coverage badge to the README file",
   "author": "Zweer <n.olivieriachille@gmail.com>",
   "license": "MIT",
