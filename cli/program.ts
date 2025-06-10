@@ -27,7 +27,7 @@ export function buildProgram(): Command {
     .action((options, _command) => {
       const { coveragePath, readmePath } = options;
       const percentage = extractCoverage(coveragePath, CoverageMetric.LINES);
-      const badge = createBadge(percentage);
+      const badge = createBadge(Math.round(percentage));
       modifyReadme(readmePath, badge);
     });
 }
