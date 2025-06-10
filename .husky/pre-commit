@@ -9,5 +9,6 @@ git add ./README.md
 # git add ./docs/EXPORT.md
 npm run build
 npm run lint
+npm run clean
 
 git update-index --again
