@@ -42,7 +42,7 @@
     "test:coverage": "npm test -- --coverage",
     "script:coverage": "npx tsx cli/index.ts",
     "prepare": "husky",
-    "clean": "rimraf --glob ./{lib,tests}/**/*.{d.ts,js}",
+    "clean": "rimraf --glob ./{cli,lib,test}/**/*.{d.ts,js} ./vitest*.{d.ts,js}",
     "prebuild": "npm run clean",
     "build": "tsc",
     "release": "semantic-release"
