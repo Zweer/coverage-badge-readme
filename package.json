@@ -26,8 +26,8 @@
     "./readme": "./lib/readme.js"
   },
   "files": [
-    "cli",
-    "lib"
+    "cli/**/*.{d.ts,js}",
+    "lib/**/*.{d.ts,js}"
   ],
   "engines": {
     "node": ">= 20"
