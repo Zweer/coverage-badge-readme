@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Zweer/coverage-badge-readme/compare/v1.0.2...v1.0.3) (2025-06-10)
+
+
+### Bug Fixes
+
+* :construction_worker: Ignoring ts files from package ([b8ea578](https://github.com/Zweer/coverage-badge-readme/commit/b8ea57892980dde903dc70012a11064b36163e11))
+
 ## [1.0.2](https://github.com/Zweer/coverage-badge-readme/compare/v1.0.1...v1.0.2) (2025-06-10)
 
 
