@@ -19,14 +19,55 @@
     "badge",
     "coverage"
   ],
-  "main": "index.js",
+  "exports": {
+    "./cli": "./cli/program.js",
+    "./badge": "./lib/badge.js",
+    "./coverage": "./lib/coverage.js",
+    "./readme": "./lib/readme.js"
+  },
+  "files": [
+    "cli",
+    "lib"
+  ],
+  "engines": {
+    "node": ">= 20"
+  },
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:eslint": "eslint . --fix",
+    "lint:lockfile": "lockfile-lint",
+    "lint:engines": "ls-engines",
+    "lint:publish": "publint --strict",
+    "lint": "concurrently npm:lint:* --prefixColors auto",
     "test": "vitest run",
     "test:coverage": "npm test -- --coverage",
     "script:coverage": "npx tsx cli/index.ts",
-    "prepare": "husky"
+    "prepare": "husky",
+    "clean": "rimraf --glob ./{lib,tests}/**/*.{d.ts,js}",
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "release": "semantic-release"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "lockfile-lint": {
+    "path": "package-lock.json",
+    "type": "npm",
+    "validate-https": true,
+    "allowed-hosts": [
+      "npm"
+    ]
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
   },
   "dependencies": {
     "@commander-js/extra-typings": "^14.0.0",
@@ -36,11 +77,19 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.14.1",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@tsconfig/node20": "^20.1.5",
     "@types/node": "^22.15.30",
     "@vitest/coverage-v8": "^3.2.2",
+    "concurrently": "^9.1.2",
     "husky": "^9.1.7",
+    "lockfile-lint": "^4.14.1",
+    "ls-engines": "^0.9.3",
     "memfs": "^4.17.2",
+    "publint": "^0.3.12",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.5",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vitest": "^3.2.2"

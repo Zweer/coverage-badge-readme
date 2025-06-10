@@ -6,6 +6,7 @@ npm run script:coverage
 git add ./README.md
 # npm run script:export
 # git add ./docs/EXPORT.md
-npm run lint:fix
+npm run build
+npm run lint
 
 git update-index --again
