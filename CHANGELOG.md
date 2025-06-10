@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/Zweer/coverage-badge-readme/compare/v1.0.0...v1.0.1) (2025-06-10)
+
+
+### Bug Fixes
+
+* **coverage:** :bug: Rounding the coverage ([67be997](https://github.com/Zweer/coverage-badge-readme/commit/67be9974296bc976fd3da98586584e19568ec591))
+
 # 1.0.0 (2025-06-10)
 
 
